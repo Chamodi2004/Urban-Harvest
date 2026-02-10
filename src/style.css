@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@source "./index.html";
+@source "./pages/**/*.{html,js}";
+@source "./src/**/*.{js,ts,jsx,tsx,html}";
+
 @layer base {
   :root {
     /* Light mode */
