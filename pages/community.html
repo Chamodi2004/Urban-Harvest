@@ -4,36 +4,41 @@
   <meta charset="UTF-8" />
   <title>Urban Harvest | Community</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore sustainability tips, recipes, and community stories from Urban Harvest promoting eco-friendly living.">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="192x192" href="/images/Logo.png">
+  <link rel="icon" href="/images/Logo.png" type="image/png">
+
+  <!-- Preload Logo (Improves LCP) -->
+  <link rel="preload" as="image" href="/images/Logo.png">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Ionicons -->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <!-- Ionicons (deferred) -->
+  <script type="module" defer src="https://unpkg.com/ionicons@7.1.0/dist/ionicons.esm.js"></script>
 </head>
 
 <body class="bg-[var(--color-accent)] dark:bg-slate-950 text-[var(--color-text)]">
 
-<!-- HEADER -->
 <header>
-<nav class="fixed top-0 left-0 w-full bg-green-700 border-b border-green-600 z-50 max-w-10xl mx-auto px-6 py-4">
-    <div class="flex items-center justify-between">
+<nav class="fixed top-0 left-0 w-full bg-green-700 border-b border-green-600 z-50 px-6 py-4">
+  <div class="flex items-center justify-between">
 
-      <!-- Logo -->
-      <div class="flex-1">
-        <img
-          src="/images/Logo.png"
-          alt="Urban Harvest Logo"
-          class="h-28 w-auto"
-        />
-      </div>
+    <!-- Logo -->
+    <div class="flex-1">
+      <img
+        src="/images/Logo.png"
+        alt="Urban Harvest Logo"
+        width="180"
+        height="80"
+        decoding="async"
+        class="h-20 w-auto"
+      />
+    </div>
+
 
       <!-- Desktop Menu -->
       <ul class="hidden md:flex items-center gap-18 justify-center text-white">
@@ -94,7 +99,15 @@
 
    <!-- Card 1 -->
 <div class="community-card bg-white dark:bg-gray-800 rounded-lg shadow p-5 flex flex-col">
-  <img src="/images/blog1.jpg" alt="" class="community-image rounded-md mb-3">
+ <img 
+  src="/images/blog1.webp" 
+  alt="Tips to reduce food waste at home"
+  width="600"
+  height="400"
+  loading="lazy"
+  decoding="async"
+  class="rounded-md mb-3 w-full h-auto">
+
 
   <span class="badge bg-green-100 text-green-800 dark:bg-green-700 dark:text-green-100 px-2 py-1 rounded text-xs">
     Sustainability
@@ -115,7 +128,14 @@
 
 <!-- Card 2 -->
 <div class="community-card bg-white dark:bg-gray-800 rounded-lg shadow p-5 flex flex-col">
-  <img src="/images/recipe.jpg" alt="" class="community-image rounded-md mb-3">
+  <img 
+  src="/images/recipe.webp" 
+  alt="Seasonal vegetable recipe dish"
+  width="600"
+  height="400"
+  loading="lazy"
+  decoding="async"
+  class="rounded-md mb-3 w-full h-auto">
 
   <span class="badge bg-yellow-100 text-yellow-800 dark:bg-yellow-700 dark:text-yellow-100 px-2 py-1 rounded text-xs">
     Recipe
@@ -136,7 +156,15 @@
 
 <!-- Card 3 -->
 <div class="community-card bg-white dark:bg-gray-800 rounded-lg shadow p-5 flex flex-col">
-  <img src="/images/farming.jpg" alt="" class="community-image rounded-md mb-3">
+  <img 
+  src="/images/farming.webp" 
+  alt="Sustainable farming practices"
+  width="600"
+  height="400"
+  loading="lazy"
+  decoding="async"
+  class="rounded-md mb-3 w-full h-auto">
+
 
   <span class="badge bg-blue-100 text-blue-800 dark:bg-blue-700 dark:text-blue-100 px-2 py-1 rounded text-xs">
     Community
