@@ -3,15 +3,20 @@ import "./style.css";
 document.addEventListener("DOMContentLoaded", () => {
 
   // ===== MOBILE MENU =====
-  const menuBtn = document.getElementById("menuBtn");
+  // const menuBtn = document.getElementById("menuBtn");
+  // const mobileMenu = document.getElementById("mobileMenu");
+
+  // if (menuBtn && mobileMenu) {
+  //   menuBtn.addEventListener("click", () => {
+  //     mobileMenu.classList.toggle("hidden");
+  //   });
+  // }
+const menuBtn = document.getElementById("menuBtn");
   const mobileMenu = document.getElementById("mobileMenu");
 
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  }
-
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
   // ===== DARK MODE =====
   const themeToggle = document.getElementById("themeToggle");
   const themeIcon = document.getElementById("themeIcon");
