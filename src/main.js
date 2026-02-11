@@ -38,42 +38,48 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ===== SIGNUP FORM VALIDATION =====
-// Get references to the form and success message
-const signupForm = document.getElementById('signupForm');
-const successMessage = document.getElementById('successMessage');
+  const signupForm = document.getElementById("signupForm");
+  const successMessage = document.getElementById("successMessage");
 
-// Listen for form submission
-signupForm.addEventListener('submit', function(e) {
-  e.preventDefault(); // Prevent default form submission
+  if (signupForm && successMessage) {
+    signupForm.addEventListener("submit", (e) => {
+      e.preventDefault(); // Prevent default form submission
 
-  // Get all input values
-  const fullName = signupForm.querySelector('input[type="text"]').value.trim();
-  const email = signupForm.querySelector('input[type="email"]').value.trim();
-  const phone = signupForm.querySelector('input[type="tel"]').value.trim();
-  const password = signupForm.querySelector('input[type="password"]').value.trim();
-  const confirmPassword = signupForm.querySelectorAll('input[type="password"]')[1].value.trim();
+      // Get all input values
+      const fullName = signupForm
+        .querySelector('input[type="text"]')
+        .value.trim();
+      const email = signupForm
+        .querySelector('input[type="email"]')
+        .value.trim();
+      const phone = signupForm
+        .querySelector('input[type="tel"]')
+        .value.trim();
+      const password = signupForm
+        .querySelector('input[type="password"]')
+        .value.trim();
+      const confirmPassword = signupForm
+        .querySelectorAll('input[type="password"]')[1]
+        .value.trim();
 
-  // Check if any field is empty
-  if (!fullName || !email || !phone || !password || !confirmPassword) {
-    alert('Please fill in all fields!');
-    return;
+      // Check if any field is empty
+      if (!fullName || !email || !phone || !password || !confirmPassword) {
+        alert("Please fill in all fields!");
+        return;
+      }
+
+      // Check if passwords match
+      if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+      }
+
+      // Show success message
+      alert("Sign-up successful! 🎉");
+      successMessage.classList.remove("hidden");
+
+      // Reset the form
+      signupForm.reset();
+    });
   }
-
-  // Check if passwords match
-  if (password !== confirmPassword) {
-    alert('Passwords do not match!');
-    return;
-  }
-
-  //  show success message
-  alert('Sign-up successful! 🎉');
-
-
-  successMessage.classList.remove('hidden');
-
-  // Reset the form
-  signupForm.reset();
-});
-
-
 });
