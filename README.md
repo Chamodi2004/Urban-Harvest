@@ -108,8 +108,7 @@ Add product filtering & search
 
 # Author
 
-Chamodi Hiranya
-Computer Science Undergraduate
+Chamodi Rupasinghe
 CB014767
 
 # License
