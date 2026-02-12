@@ -75,10 +75,11 @@
   </div>
 </header>
 <!-- MAIN -->
-<main class="max-w-7xl mx-auto px-6 space-y-20 pt-40">
+<main class="max-w-7xl mx-auto px-6 space-y-20 pt-32">
 
   <!-- HERO SECTION -->
   <section class="grid md:grid-cols-2 gap-10 items-center">
+    
     <div>
       <h1 class="text-4xl font-bold mb-4 text-green-600">
         Sustainable Living Made Simple
@@ -90,7 +91,7 @@
       </p>
 
       <a href="/pages/products.html"
-         class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+         class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors duration-200">
         Explore Products
       </a>
     </div>
@@ -101,26 +102,30 @@
         alt="Fresh organic vegetables promoting sustainable living"
         width="600"
         height="500"
+        sizes="(max-width: 768px) 100vw, 600px"
         loading="eager"
         fetchpriority="high"
         decoding="async"
-        class="rounded-2xl shadow-lg w-full h-auto"
+        class="rounded-2xl shadow-md w-full h-auto aspect-[6/5] object-cover"
       />
     </div>
+
   </section>
 
 
   <!-- MISSION SECTION -->
   <section class="grid md:grid-cols-2 gap-8 items-center">
+    
     <div class="flex justify-center">
       <img
         src="/images/mission.jpg"
         alt="People supporting sustainable agriculture initiatives"
         width="500"
         height="350"
+        sizes="(max-width: 768px) 100vw, 500px"
         loading="lazy"
         decoding="async"
-        class="rounded-xl shadow-md w-full h-auto"
+        class="rounded-xl shadow-sm w-full h-auto aspect-[10/7] object-cover"
       />
     </div>
 
@@ -135,6 +140,7 @@
         conscious community that values the planet.
       </p>
     </div>
+
   </section>
 
 
@@ -146,7 +152,8 @@
 
     <div class="grid md:grid-cols-3 gap-8">
 
-      <article class="bg-green-50 dark:bg-green-900 rounded-2xl p-6 shadow-md">
+      <!-- CARD -->
+      <article class="bg-green-50 dark:bg-green-900 rounded-2xl p-6 shadow-sm">
         <img
           src="/images/ethical-sourcing.jpg"
           alt="Farmers practicing ethical sourcing methods"
@@ -164,7 +171,7 @@
         </p>
       </article>
 
-      <article class="bg-green-50 dark:bg-green-900 rounded-2xl p-6 shadow-md">
+      <article class="bg-green-50 dark:bg-green-900 rounded-2xl p-6 shadow-sm">
         <img
           src="/images/eco-products.jpg"
           alt="Eco-friendly reusable household products"
@@ -182,7 +189,7 @@
         </p>
       </article>
 
-      <article class="bg-green-50 dark:bg-green-900 rounded-2xl p-6 shadow-md">
+      <article class="bg-green-50 dark:bg-green-900 rounded-2xl p-6 shadow-sm">
         <img
           src="/images/community.jpg"
           alt="Community members participating in sustainability event"
@@ -212,7 +219,7 @@
 
     <div class="grid md:grid-cols-3 gap-8">
 
-      <article class="bg-green-50 dark:bg-green-900 rounded-2xl p-6 shadow-md">
+      <article class="bg-green-50 dark:bg-green-900 rounded-2xl p-6 shadow-sm">
         <img
           src="/images/produce.jpg"
           alt="Fresh organic fruits and vegetables ready for delivery"
@@ -230,7 +237,7 @@
         </p>
       </article>
 
-      <article class="bg-green-50 dark:bg-green-900 rounded-2xl p-6 shadow-md">
+      <article class="bg-green-50 dark:bg-green-900 rounded-2xl p-6 shadow-sm">
         <img
           src="/images/packing.jpg"
           alt="Sustainable low-waste packaging materials"
@@ -248,7 +255,7 @@
         </p>
       </article>
 
-      <article class="bg-green-50 dark:bg-green-900 rounded-2xl p-6 shadow-md">
+      <article class="bg-green-50 dark:bg-green-900 rounded-2xl p-6 shadow-sm">
         <img
           src="/images/workshops.jpg"
           alt="People attending sustainability workshop"
@@ -270,6 +277,7 @@
   </section>
 
 </main>
+
 
 
 <!-- FOOTER -->
