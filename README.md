@@ -3,6 +3,29 @@ Urban Harvest is a modern, responsive web application that promotes sustainable 
 
 This project is built using HTML, Tailwind CSS, and JavaScript (Vite).
 
+Hosted Link - (https://urban-harvest-six.vercel.app/)
+![Lighthouse](image.png)
+
+
+## 📋 Table of Contents
+
+- [Overview](#overview)
+- [Live Demo](#live-demo)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Development](#development)
+- [Build & Deployment](#build--deployment)
+- [Project Structure](#project-structure)
+- [Pages Overview](#pages-overview)
+- [Design Highlights](#design-highlights)
+- [Future Improvements](#future-improvements)
+- [Accessibility](#accessibility)
+- [Performance](#performance)
+- [Browser Support](#browser-support)
+- [Author](#author)
+- [License](#license)
+
 # Features
 Responsive multi-page website
 
